@@ -97,12 +97,12 @@ function nearestLargerNum(param) {
       break;
     }
   }
-
-  if (leftLargerNum > 0 && rightLargerNum > 0) {
+  
+  if (leftLargerNum != undefined && rightLargerNum != undefined) {
     result = leftLargerNum > rightLargerNum ? rightLargerNum : leftLargerNum;
-  } else if (leftLargerNum > 0) {
+  } else if (leftLargerNum != undefined) {
     result = leftLargerNum;
-  } else if (rightLargerNum > 0) {
+  } else if (rightLargerNum != undefined) {
     result = rightLargerNum;
   }
   return result;
